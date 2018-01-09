@@ -1,12 +1,12 @@
-package bean_Catégorie;
+package beanCategorie;
 
 import java.util.ArrayList;
 import bean_Produit.*;
 
 public class Categorie extends ArrayList<Produit> {
 	
-	int codeCategorie;
-	String nomCategorie;
+	private int codeCategorie;
+	private String nomCategorie;
 	
 	
 	public int getCodeCategorie() {
