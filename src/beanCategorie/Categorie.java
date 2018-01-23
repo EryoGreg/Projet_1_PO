@@ -3,6 +3,7 @@ package beanCategorie;
 import java.util.ArrayList;
 import bean_Produit.*;
 
+@SuppressWarnings("serial")
 public class Categorie extends ArrayList<Produit> {
 	
 	private int codeCategorie;
