@@ -12,7 +12,7 @@ public class CollectionCategorie extends ArrayList<Categorie>{
 	public CollectionCategorie(int curseur) {
 		this.curseur = curseur;
 	}
-	public Categorie getCatégorieCourante() {
+	public Categorie getCategorieCourante() {
 		return this.get(curseur);
 	}
 	public void suivant() {

@@ -4,12 +4,19 @@ import java.util.ArrayList;
 import bean_Produit.*;
 
 @SuppressWarnings("serial")
-public class Categorie extends ArrayList<Produit> {
+public class Categorie {
 	
 	private int codeCategorie;
 	private String nomCategorie;
-	
-	
+	private ArrayList<Produit> listeProduits;
+
+
+	public Categorie(int codeCategorie, String nomCategorie) {
+		this.codeCategorie = codeCategorie;
+		this.nomCategorie = nomCategorie;
+		this.listeProduits = new ArrayList<Produit>();
+	}
+
 	public int getCodeCategorie() {
 		return codeCategorie;
 	}
@@ -21,6 +28,19 @@ public class Categorie extends ArrayList<Produit> {
 	}
 	public void setNomCategorie(String nomCategorie) {
 		this.nomCategorie = nomCategorie;
+	}
+
+	public void ajouterProduit(Produit p) {
+		listeProduits.add(p);
+	}
+
+	@Override
+	public String toString() {
+		return "Categorie{" +
+				"codeCategorie=" + codeCategorie +
+				", nomCategorie='" + nomCategorie + '\'' +
+				", listeProduits=" + listeProduits +
+				'}';
 	}
 			
 
