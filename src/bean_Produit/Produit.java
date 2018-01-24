@@ -40,4 +40,8 @@ public class Produit {
 	public void setCodeCategorie(int codeCategorie) {
 		this.codeCategorie = codeCategorie;
 	}
+	@Override
+	public String toString() {
+		return nomProduit+"("+codeCategorie+") : "+prixProduit+"€";
+	}
 }
