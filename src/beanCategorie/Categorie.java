@@ -16,6 +16,10 @@ public class Categorie {
 		this.nomCategorie = nomCategorie;
 		this.listeProduits = new ArrayList<Produit>();
 	}
+	
+	public void ajouteProduit(Produit p) {
+		listeProduits.add(p);
+	}
 
 	public int getCodeCategorie() {
 		return codeCategorie;
